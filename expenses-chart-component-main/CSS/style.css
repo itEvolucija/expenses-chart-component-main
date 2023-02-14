@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,700;1,400&display=swap");
+
+/* COLORS */
+
+:root {
+  
+  /* Primary */
+
+  --soft-red: hsl(10, 79%, 65%);
+  --cyan: hsl(186, 34%, 60%);
+
+  /* Neutral */
+
+  --dark-brown: hsl(25, 47%, 15%);
+  --medium-brown: hsl(28, 10%, 53%);
+  --cream: hsl(27, 66%, 92%);
+  --very-pale-orange: hsl(33, 100%, 98%);
+}
+
+/* GLOBAL */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  height: 100vh;
+  width: 1440px;
+  margin: auto;
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+  background-color: var(--cream);
+  color: var(--medium-brown);
+}
+
+/* MAIN */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 540px;
+  padding: 20px;
+  border-radius: 1rem;
+  background-color: var(--soft-red);
+  color: var(--very-pale-orange);
+}
+main {
+  background-color: var(--very-pale-orange);
+  padding: 20px;
+  border-radius: 1rem;
+}
+.week h1 {
+  color: var(--dark-brown);
+}
+.days {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 400px;
+  width: 500px;
+}
+.day {
+  width: 60px;
+}
+.day > div p {
+  display: flex;
+  justify-content: center;
+}
+.day > :first-child {
+  background-color: var(--soft-red);
+  border-radius: 0.5rem;
+}
+.day > :first-child:hover {
+  cursor: pointer;
+  background-color: var(--cyan);
+}
+.mon {
+  height: 100px;
+}
+.tue {
+  height: 150px;
+}
+.wed {
+  height: 200px;
+}
+.thu {
+  height: 130px;
+}
+.fri {
+  height: 110px;
+}
+.sat {
+  height: 180px;
+}
+.sun {
+  height: 120px;
+}
+hr {
+  margin: 1.5rem 0;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+footer h2 {
+  font-size: 40px;
+  color: var(--dark-brown);
+}
+footer h4 {
+  color: var(--dark-brown);
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
